@@ -7,7 +7,8 @@ var bigInt = (function (undefined) {
         MAX_INT_ARR = smallToArray(MAX_INT),
         DEFAULT_ALPHABET = "0123456789abcdefghijklmnopqrstuvwxyz";
 
-    var supportsNativeBigInt = typeof BigInt === "function";
+    // var supportsNativeBigInt = typeof BigInt === "function";
+    var supportsNativeBigInt = false;
 
     function Integer(v, radix, alphabet, caseSensitive) {
         if (typeof v === "undefined") return Integer[0];
